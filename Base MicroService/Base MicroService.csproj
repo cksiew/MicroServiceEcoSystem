@@ -351,11 +351,19 @@
   <ItemGroup>
     <Compile Include="BaseMicroService.cs" />
     <Compile Include="IBaseMicroService.cs" />
+    <Compile Include="ILogger.cs" />
+    <Compile Include="MSBaseLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonMessages\CommonMessages.csproj">
+      <Project>{0E86C04B-7500-45E1-A98A-167B6AB824CB}</Project>
+      <Name>CommonMessages</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
