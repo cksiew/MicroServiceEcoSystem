@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonMessages", "CommonMes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memory MicroService", "Memory MicroService\Memory MicroService.csproj", "{5672C576-0F59-480D-8B70-8C4E947D038D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeploymentMonitorMicroService", "DeploymentMonitorMicroService\DeploymentMonitorMicroService.csproj", "{FDFFDEA7-C511-432E-B334-F60222193E29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeploymentMonitorMicroServiceTest", "DeploymentMonitorMicroServiceTest\DeploymentMonitorMicroServiceTest.csproj", "{05BF3EBC-37BE-4D54-B5D0-0C0A53B535D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{5672C576-0F59-480D-8B70-8C4E947D038D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5672C576-0F59-480D-8B70-8C4E947D038D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5672C576-0F59-480D-8B70-8C4E947D038D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDFFDEA7-C511-432E-B334-F60222193E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDFFDEA7-C511-432E-B334-F60222193E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDFFDEA7-C511-432E-B334-F60222193E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDFFDEA7-C511-432E-B334-F60222193E29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05BF3EBC-37BE-4D54-B5D0-0C0A53B535D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05BF3EBC-37BE-4D54-B5D0-0C0A53B535D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05BF3EBC-37BE-4D54-B5D0-0C0A53B535D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05BF3EBC-37BE-4D54-B5D0-0C0A53B535D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

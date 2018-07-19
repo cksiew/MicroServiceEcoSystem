@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E86C04B-7500-45E1-A98A-167B6AB824CB}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CommonMessages</RootNamespace>
-    <AssemblyName>CommonMessages</AssemblyName>
+    <ProjectGuid>{FDFFDEA7-C511-432E-B334-F60222193E29}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DeploymentMonitorMicroService</RootNamespace>
+    <AssemblyName>DeploymentMonitorMicroService</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -288,16 +290,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BasicMessage.cs" />
-    <Compile Include="DeploymentStartMessage.cs" />
-    <Compile Include="DeploymentStopMessage.cs" />
-    <Compile Include="HealthStatusMessage.cs" />
-    <Compile Include="MemoryUpdateMessage.cs" />
+    <Compile Include="DeploymentMonitorMicroService.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base MicroService\Base MicroService.csproj">
+      <Project>{37696ff5-4b8b-4bec-b2ce-b5ae88cd38f3}</Project>
+      <Name>Base MicroService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonMessages\CommonMessages.csproj">
+      <Project>{0e86c04b-7500-45e1-a98a-167b6ab824cb}</Project>
+      <Name>CommonMessages</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
