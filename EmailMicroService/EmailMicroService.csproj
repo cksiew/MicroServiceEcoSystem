@@ -302,11 +302,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DNSMessage.cs" />
+    <Compile Include="DnsMessageCoder.cs" />
+    <Compile Include="DNSQuery.cs" />
+    <Compile Include="DNSResource.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="EmailMS.cs" />
+    <Compile Include="MailExchange.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base MicroService\Base MicroService.csproj">
+      <Project>{37696FF5-4B8B-4BEC-B2CE-B5AE88CD38F3}</Project>
+      <Name>Base MicroService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonMessages\CommonMessages.csproj">
+      <Project>{0E86C04B-7500-45E1-A98A-167B6AB824CB}</Project>
+      <Name>CommonMessages</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

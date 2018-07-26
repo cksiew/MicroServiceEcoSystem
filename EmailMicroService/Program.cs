@@ -41,14 +41,27 @@ namespace EmailMicroService
                         return service;
                     });
                     s?.ConstructUsing(name => new EmailMS());
-                    s?.WhenStarted((EamilMS server, HostControl host) => server.OnStart(host));
+                    s?.WhenStarted((EmailMS server, HostControl host) => server.OnStart(host));
                     s?.WhenPaused(server => server?.OnPause());
                     s?.WhenContinued(server => server?.OnResume());
                     s?.WhenStopped(server => server?.OnStop());
                     s?.WhenShutdown(server => server?.OnShutdown());
 
                 });
-            })
+                c?.RunAsNetworkService();
+                c?.StartAutomaticallyDelayed();
+                c?.SetDescription(string.Intern("Email MicroService Sample"));
+                c?.SetDisplayName(string.Intern("EmailMicroService"));
+                c?.SetServiceName(string.Intern("HealthMonitoringMicroService"));
+                c?.EnableServiceRecovery(r =>
+                {
+                    r?.OnCrashOnly();
+                    r?.RestartService(1); //first
+                    r?.RestartService(1); //second
+                    r?.RestartService(1); // subsequents
+                    r?.SetResetPeriod(0);
+                });
+            });
         }
     }
 }

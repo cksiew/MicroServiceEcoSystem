@@ -291,6 +291,7 @@
     <Compile Include="BasicMessage.cs" />
     <Compile Include="DeploymentStartMessage.cs" />
     <Compile Include="DeploymentStopMessage.cs" />
+    <Compile Include="EmailSendRequest.cs" />
     <Compile Include="HealthStatusMessage.cs" />
     <Compile Include="MemoryUpdateMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
