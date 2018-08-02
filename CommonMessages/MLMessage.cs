@@ -75,6 +75,7 @@ namespace CommonMessages
     [Queue("MachineLearning", ExchangeName ="EvolvedAI")]
     public class MLMessage
     {
+        public long ID { get; set; }
         public int MessageType { get; set; }
         public int LayerType { get; set; }
         public double param1 { get; set; }

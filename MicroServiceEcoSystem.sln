@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineLearningMicroService
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantMicroService", "QuantMicroService\QuantMicroService.csproj", "{571EF6E8-CAFA-461A-A6B7-28C3FF28B6F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroServiceManager", "MicroServiceManager\MicroServiceManager.csproj", "{B951D7F9-4906-4CFF-B610-761091B105ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitcoinMicroService", "BitcoinMicroService\BitcoinMicroService.csproj", "{91A6DE03-6E41-4676-8266-33054E5D9F62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{571EF6E8-CAFA-461A-A6B7-28C3FF28B6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{571EF6E8-CAFA-461A-A6B7-28C3FF28B6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{571EF6E8-CAFA-461A-A6B7-28C3FF28B6F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B951D7F9-4906-4CFF-B610-761091B105ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B951D7F9-4906-4CFF-B610-761091B105ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B951D7F9-4906-4CFF-B610-761091B105ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B951D7F9-4906-4CFF-B610-761091B105ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A6DE03-6E41-4676-8266-33054E5D9F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A6DE03-6E41-4676-8266-33054E5D9F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A6DE03-6E41-4676-8266-33054E5D9F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A6DE03-6E41-4676-8266-33054E5D9F62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
